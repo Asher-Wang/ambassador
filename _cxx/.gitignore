@@ -1,6 +1,7 @@
-/envoy/
-/envoy-static
-/envoy-build-image.txt
-/envoy-build-container.txt
+# /envoy/
+# /envoy-static
+# /envoy-build-image.txt
+# /envoy-build-container.txt
 
-/go-control-plane/
+# /go-control-plane/
+# #

@@ -1,139 +1,139 @@
-# Docker build pin files
-docker/*.pin
+# # Docker build pin files
+# docker/*.pin
 
-*.pyc
-*~
-.cache
-.coverage
-.dmypy
-.dmypy.json
-.python-version
-.DS_Store
-.skip_test_warning
-venv
-.venv
-__pycache__
-.pytest_cache
-.mypy_cache
-.envrc
+# *.pyc
+# *~
+# .cache
+# .coverage
+# .dmypy
+# .dmypy.json
+# .python-version
+# .DS_Store
+# .skip_test_warning
+# venv
+# .venv
+# __pycache__
+# .pytest_cache
+# .mypy_cache
+# .envrc
 
-# local files
-*.local
-*.local.sh
+# # local files
+# *.local
+# *.local.sh
 
-# binaries
-/bin
-/bin_*/
+# # binaries
+# /bin
+# /bin_*/
 
-# helm chart
-charts/ambassador/ci/tests/values
-charts/ambassador/artifacts
-charts/ambassador/k3dconfig
+# # helm chart
+# charts/ambassador/ci/tests/values
+# charts/ambassador/artifacts
+# charts/ambassador/k3dconfig
 
-vendor_bootstrap_hack.go
+# vendor_bootstrap_hack.go
 
-/tools/sandbox/grpc_auth/docker-compose.yml
-/tools/sandbox/grpc_web/docker-compose.yaml
-/tools/sandbox/http_auth/docker-compose.yml
+# /tools/sandbox/grpc_auth/docker-compose.yml
+# /tools/sandbox/grpc_web/docker-compose.yaml
+# /tools/sandbox/http_auth/docker-compose.yml
 
-/docker/images.sh
-/docker/images.tar
-/docker/volume.tar
-/docker/container.txt
-/docker/container.txt.stamp
-*.docker
-*.docker.stamp
-*.docker.tag.*
-*.docker.push.*
+# /docker/images.sh
+# /docker/images.tar
+# /docker/volume.tar
+# /docker/container.txt
+# /docker/container.txt.stamp
+# *.docker
+# *.docker.stamp
+# *.docker.tag.*
+# *.docker.push.*
 
-*.egg-info
-/build
-/python/build
-dist
+# *.egg-info
+# /build
+# /python/build
+# dist
 
-*.out
-*.log
-*.tmp
-*.bak
-log.txt
+# *.out
+# *.log
+# *.tmp
+# *.bak
+# log.txt
 
-# From `make update-aws`
-/stable.txt
-/app.json
+# # From `make update-aws`
+# /stable.txt
+# /app.json
 
-docs/_book
-docs/_site
-docs/Gemfile.lock
-docs/node_modules
-package-lock.json
-.netlify
-node_modules
-unused-e2e
+# docs/_book
+# docs/_site
+# docs/Gemfile.lock
+# docs/node_modules
+# package-lock.json
+# .netlify
+# node_modules
+# unused-e2e
 
-.forge
-forge.yaml
+# .forge
+# forge.yaml
 
-# Editor nonsense
-.vscode
-.idea
-*.iml
-tags
+# # Editor nonsense
+# .vscode
+# .idea
+# *.iml
+# tags
 
-# Test outputs
-no-such-file
-envoy.json
-intermediate.json
-gold.no_yaml.json
-v1.json
-check-*.json
-stats.json
-ambassador-deployment-*.yaml
-ambassador-secrets-deployment.yaml
-*failures.txt
-*.swp
-.ambassador_ignore_ingress_class
+# # Test outputs
+# no-such-file
+# envoy.json
+# intermediate.json
+# gold.no_yaml.json
+# v1.json
+# check-*.json
+# stats.json
+# ambassador-deployment-*.yaml
+# ambassador-secrets-deployment.yaml
+# *failures.txt
+# *.swp
+# .ambassador_ignore_ingress_class
 
-# --- Files ignored by older versions ---
-# Remove the tail of this list when the commit making the change gets
-# far enough in to the past.
+# # --- Files ignored by older versions ---
+# # Remove the tail of this list when the commit making the change gets
+# # far enough in to the past.
 
-# 2020-08-20
-/cxx/envoy/
-/cxx/envoy-static
-/cxx/envoy-build-image.txt
-/cxx/envoy-build-container.txt
-/cxx/go-control-plane/
-# 2019-10-13
-/build/kat/client/kat_client
-/build/kat/client/teleproxy
-/build/kat/server/kat-server
-# 2019-10-13
-/.docker_port_forward
-# 2019-10-13
-/cluster.yaml
-/kubernaut-claim.txt
-# 2019-10-13
-/ambex
-/kubestatus
-/watt
-/cmd/ambex/ambex
-# 2019-10-11
-/envoy-src/
-/envoy-bin/
-/envoy-build-image.txt
-/envoy-build-container.txt
-# 2019-10-08
-/kat-sandbox/grpc_auth/docker-compose.yml
-/kat-sandbox/grpc_web/*_pb.js
-/kat-sandbox/grpc_web/docker-compose.yaml
-/kat-sandbox/http_auth/docker-compose.yml
-/kat-server-docker-image/kat-server
-/kat/docs/**/_build
-/unused-e2e/**/ambassador-deployment-mounts.yaml
-/unused-e2e/**/ambassador-deployment.yaml
-/unused-e2e/**/kubernaut
-/unused-e2e/*/k8s/ambassador-deployment*.yaml
-# 2019-06-14
-/envoy/
-# 2019-04-05 0388efe75c16540c71223320596accbbe3fe6ac2
-/kat/kat/client
+# # 2020-08-20
+# /cxx/envoy/
+# /cxx/envoy-static
+# /cxx/envoy-build-image.txt
+# /cxx/envoy-build-container.txt
+# /cxx/go-control-plane/
+# # 2019-10-13
+# /build/kat/client/kat_client
+# /build/kat/client/teleproxy
+# /build/kat/server/kat-server
+# # 2019-10-13
+# /.docker_port_forward
+# # 2019-10-13
+# /cluster.yaml
+# /kubernaut-claim.txt
+# # 2019-10-13
+# /ambex
+# /kubestatus
+# /watt
+# /cmd/ambex/ambex
+# # 2019-10-11
+# /envoy-src/
+# /envoy-bin/
+# /envoy-build-image.txt
+# /envoy-build-container.txt
+# # 2019-10-08
+# /kat-sandbox/grpc_auth/docker-compose.yml
+# /kat-sandbox/grpc_web/*_pb.js
+# /kat-sandbox/grpc_web/docker-compose.yaml
+# /kat-sandbox/http_auth/docker-compose.yml
+# /kat-server-docker-image/kat-server
+# /kat/docs/**/_build
+# /unused-e2e/**/ambassador-deployment-mounts.yaml
+# /unused-e2e/**/ambassador-deployment.yaml
+# /unused-e2e/**/kubernaut
+# /unused-e2e/*/k8s/ambassador-deployment*.yaml
+# # 2019-06-14
+# /envoy/
+# # 2019-04-05 0388efe75c16540c71223320596accbbe3fe6ac2
+# /kat/kat/client
